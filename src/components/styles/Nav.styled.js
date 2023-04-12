@@ -22,4 +22,12 @@ export const Menu = styled.div`
     letter-spacing: 3px;
     font-weight: 500;
   }
+
+  ul > * {
+    color: white;
+  }
+
+  @media screen and (max-width: 430px) {
+    margin-top: 40px;
+  }
 `;

@@ -39,9 +39,7 @@ function Footer() {
                 &nbsp; 555 Industry Road, Minneapolis, MN
               </h5>
             </ContactContainer>
-            <CompanyContainer>
-              <p>&copy; 2023 Jessica Thompson</p>
-            </CompanyContainer>
+
             <ConnectContainer>
               <h4>Get In Touch</h4>
               <GrInstagram style={{ height: "30px", width: "30px" }} />

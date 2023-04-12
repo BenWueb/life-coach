@@ -10,6 +10,10 @@ export const TwoContainer = styled.div`
   justify-content: center;
   background-color: black;
 
+  @media screen and (max-width: 430px) {
+    flex-direction: column;
+  }
+
   h4 {
     text-transform: uppercase;
     letter-spacing: 2px;

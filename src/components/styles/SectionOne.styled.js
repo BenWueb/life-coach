@@ -10,6 +10,10 @@ export const OneContainer = styled.div`
   display: flex;
   position: relative;
   margin: 0 auto;
+
+  @media screen and (max-width: 430px) {
+    flex-direction: column;
+  }
 `;
 export const OneImageContainer = styled.div`
   flex: 1;
@@ -24,6 +28,10 @@ export const ImageOne = styled.img`
   z-index: 1;
   object-fit: cover;
   border: 2px solid black;
+
+  @media screen and (max-width: 430px) {
+    position: relative;
+  }
 `;
 export const ImageTwo = styled.img`
   height: 600px;
@@ -33,6 +41,14 @@ export const ImageTwo = styled.img`
   top: -50px;
   left: 200px;
   border: 2px solid black;
+
+  @media screen and (max-width: 430px) {
+    position: relative;
+    top: -220px;
+    left: 100px;
+    height: 300px;
+    width: 250px;
+  }
 `;
 
 export const ImageThree = styled.img`
@@ -44,6 +60,14 @@ export const ImageThree = styled.img`
   left: 80px;
   transform: rotate(-5deg);
   border: 2px solid black;
+
+  @media screen and (max-width: 430px) {
+    position: relative;
+    top: -250px;
+    left: 30px;
+    height: 300px;
+    width: 300px;
+  }
 `;
 
 export const OneTextContainer = styled.div`
@@ -63,12 +87,27 @@ export const OneTextContainer = styled.div`
   h5 {
     position: absolute;
     right: 0;
-    top: 60px;
+    top: 50%;
     transform: rotate(90deg);
     font-size: 16px;
   }
 
   p {
     margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 430px) {
+    padding: 0 20px;
+    margin-bottom: 80px;
+
+    h2 {
+      transform: rotate(-10deg) translateY(-70px);
+      text-align: center;
+      font-size: 80px;
+    }
+
+    h3 {
+      text-align: center;
+    }
   }
 `;

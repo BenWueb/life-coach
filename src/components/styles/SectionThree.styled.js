@@ -12,7 +12,7 @@ export const SectionThreeContainer = styled.div`
   background-attachment: fixed;
   background-size: cover;
   color: white;
-  padding: 40px 0;
+  padding: 40px 10px;
   h1 {
     text-align: center;
     line-height: 40px;
@@ -29,26 +29,53 @@ export const ThreeContainerOne = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 80px;
+
+  @media screen and (max-width: 430px) {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
 `;
 export const ImageOne = styled.img`
   height: 400px;
   width: auto;
   object-fit: cover;
   flex: 1;
+
+  @media screen and (max-width: 430px) {
+    height: 200px;
+    width: 100%;
+  }
 `;
 
 export const TextContainerOne = styled.div`
   width: 40%;
   margin: auto 0;
+
+  @media screen and (max-width: 430px) {
+    width: 100%;
+    text-align: center;
+  }
 `;
 export const ThreeContainerTwo = styled.div`
   display: flex;
 
   justify-content: space-between;
   padding: 40px;
+
+  @media screen and (max-width: 430px) {
+    flex-direction: column-reverse;
+    padding: 0;
+    gap: 20px;
+  }
 `;
 export const TextContainerTwo = styled.div`
   width: 40%;
+
+  @media screen and (max-width: 430px) {
+    width: 100%;
+    text-align: center;
+  }
 `;
 export const ImageTwo = styled.img`
   height: 600px;
@@ -57,4 +84,10 @@ export const ImageTwo = styled.img`
   object-fit: cover;
   border: 2px solid black;
   transform: translateY(-80px) translateX(-80px);
+
+  @media screen and (max-width: 430px) {
+    transform: translateY(0) translateX(0);
+    height: 200px;
+    width: 100%;
+  }
 `;

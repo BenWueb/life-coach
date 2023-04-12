@@ -30,7 +30,7 @@ export const CtaContainer = styled.div`
 
   h4 {
     letter-spacing: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   h1 {
@@ -42,6 +42,32 @@ export const CtaContainer = styled.div`
       display: inline-block;
       font-size: 170px;
       font-weight: 400;
+    }
+  }
+
+  .manifest {
+    transform: translateY(50px);
+  }
+
+  @media screen and (max-width: 430px) {
+    justify-content: start;
+
+    h1 {
+      line-height: 3rem;
+      span {
+        font-size: 60px;
+        transform: translateY(0);
+      }
+    }
+
+    h4 {
+      margin-top: 130px;
+      font-size: 16px;
+    }
+
+    .manifest {
+      transform: translateY(30px);
+      font-size: 80px;
     }
   }
 `;
