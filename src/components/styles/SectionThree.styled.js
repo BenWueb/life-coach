@@ -17,7 +17,7 @@ export const SectionThreeContainer = styled.div`
     text-align: center;
     line-height: 40px;
     text-transform: uppercase;
-    margin: 120px 0;
+    margin: 200px 0;
   }
 
   h4 {

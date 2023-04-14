@@ -98,7 +98,7 @@ export const OneTextContainer = styled.div`
 
   @media screen and (max-width: 430px) {
     padding: 0 20px;
-    margin-bottom: 80px;
+    margin-bottom: 140px;
 
     h2 {
       transform: rotate(-10deg) translateY(-70px);
